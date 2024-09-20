@@ -13,3 +13,7 @@ const limparFormulario = () => {
     document.getElementById ('localidade').value = '';
     document.getElementById ('uf').value = '';
 }
+
+// verifica se o cep é válido
+
+const eNumero = (numero)=> /^[0-9]/+$/.test(numero);
