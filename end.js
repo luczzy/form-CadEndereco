@@ -18,3 +18,11 @@ const limparFormulario = () => {
 
 const eNumero = (numero)=> /^[0-9]+$/.test(numero);
 const cepValido = (cep) => cep.lenght == 8
+
+
+const preencherFormulario = (endereco) => {
+    document.getElementById('logradouro').value = endereco.logradouro;
+    document.getElementById('bairro').value = endereco.bairro;
+    document.getElementById('localidade').value = endereco.localidade;
+    document.getElementById('uf').value = endereco.uf;
+}
