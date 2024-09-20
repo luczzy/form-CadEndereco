@@ -1,0 +1,65 @@
+/* Definindo a estilização básica */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos do container principal */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Estilo do título */
+h2 {
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+/* Grupo de entradas do formulário */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    color: #004d40;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b2dfdb;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f0f4c3;
+}
+
+/* Estilo do botão de envio */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
