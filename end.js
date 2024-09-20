@@ -16,4 +16,5 @@ const limparFormulario = () => {
 
 // verifica se o cep é válido
 
-const eNumero = (numero)=> /^[0-9]/+$/.test(numero);
+const eNumero = (numero)=> /^[0-9]+$/.test(numero);
+const cepValido = (cep) => cep.lenght == 8
