@@ -4,7 +4,6 @@
 
 
 // função para limpar campos preenchidos
-
 const limparFormulario = () => {
     document.getElementById ('cep').value = '';
     document.getElementById ('logradouro').value = '';
@@ -17,12 +16,17 @@ const limparFormulario = () => {
 // verifica se o cep é válido
 
 const eNumero = (numero)=> /^[0-9]+$/.test(numero);
-const cepValido = (cep) => cep.lenght == 8
+const cepValido = (cep) => cep.lenght == 8 && eNumero(cep);
 
-
+// função para preencher formulários
 const preencherFormulario = (endereco) => {
     document.getElementById('logradouro').value = endereco.logradouro;
     document.getElementById('bairro').value = endereco.bairro;
     document.getElementById('localidade').value = endereco.localidade;
     document.getElementById('uf').value = endereco.uf;
+}
+
+// Função para consumo de API ViaCep
+const pesquisarCep = async() =>{
+    
 }
